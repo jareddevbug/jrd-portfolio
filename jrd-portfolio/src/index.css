@@ -1,0 +1,44 @@
+#root {
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  height:100%;
+  /* background: radial-gradient(ellipse at bottom,#1B2735 0%,#090A0F 100%); */
+  background: transparent;
+  overflow:hidden;
+}
+
+#stars{
+  width:2px;
+  height:2px;
+  background:transparent;
+  box-shadow:
+    100px 200px white,
+    300px 400px white,
+    500px 100px white,
+    700px 300px white,
+    900px 600px white,
+    1200px 500px white,
+    1500px 200px white,
+    1700px 700px white,
+    1900px 100px white,
+    400px 800px white,
+    800px 900px white,
+    1300px 700px white;
+    
+  animation: moveStars 20s linear infinite;
+}
+
+@keyframes moveStars{
+  from{
+    transform:translateY(0px);
+  }
+  to{
+    transform:translateY(-2000px);
+  }
+}
