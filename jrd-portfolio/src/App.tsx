@@ -38,7 +38,7 @@ function App() {
             <Card className="bento-card intro-card">
               <Card.Body>
                 <div className="profile-card-img d-flex flex-column align-items-center justify-content-center">
-                  <img src="./src/jrd-vector-beard.png" alt="jrd.sf"/>
+                  <img src="./jrd-vector-beard.png" alt="jrd.sf"/>
                 </div>
                 <h2 className="hero-title text-left mt-2">Jared San Fernando 
                    <i className="bi bi-patch-check-fill text-primary ms-1"></i>
