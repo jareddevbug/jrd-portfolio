@@ -30,7 +30,7 @@ function ToolsCard({ isDark, onToggleTheme }: ToolsCardProps) {
           CV
         </Button>
         </Stack>
-        <Stack direction="horizontal" gap={2} className="social-row">
+        {/* <Stack direction="horizontal" gap={2} className="social-row">
           <Button
             className="icon-btn"
             href="https://github.com"
@@ -49,7 +49,7 @@ function ToolsCard({ isDark, onToggleTheme }: ToolsCardProps) {
           <Button className="icon-btn" href="mailto:hello@example.com" aria-label="Email" variant="dark">
             <FontAwesomeIcon icon={faEnvelope} />
           </Button>
-        </Stack>
+        </Stack> */}
       </Card.Body>
     </Card>
   );

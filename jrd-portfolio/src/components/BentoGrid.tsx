@@ -5,41 +5,33 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowTrendUp,
   faBriefcase,
-  // faCode,
-  faDatabase,
   faFolderOpen,
   faGraduationCap,
-  // faLaptopCode,
-  // faPalette,
+  faInfoCircle,
+  faCode
 } from "@fortawesome/free-solid-svg-icons";
 import BentoCard, { type BentoCardItem } from "./BentoCard";
 
 const bentoItems: BentoCardItem[] = [
   {
-    title: "HRIS Platform",
-    description: "Role-based employee lifecycle platform focused on fast workflows and clear data visibility.",
-    icon: faBriefcase,
-    tags: ["React", "PHP", "MySQL"],
+    title: "About Me",
+    description: "I’m a Software Developer passionate about designing internal enterprise systems that make complex workflows simple and efficient. I specialize in building applications that streamline HR, inventory, and operational processes, helping teams work smarter and reducing friction across the organization.With experience in database-driven systems, process automation, and scalable application design, I focus on delivering solutions that are maintainable, performant, and aligned with business needs. I enjoy turning challenges into practical systems that drive real impact.",
+    icon: faInfoCircle,
+    tags: [],
     featured: false,
     size: "wide",
-    ctaLabel: "View Project",
-    ctaHref: "#",
-  },
-  {
-    title: "Inventory System",
-    description: "Operational inventory dashboard with real-time stock movement and reporting tools.",
-    icon: faDatabase,
-    tags: ["TypeScript", "Laravel", "REST API"],
-    featured: false,
-    ctaLabel: "View Project",
+    ctaLabel: "Learn More",
     ctaHref: "#",
   },
   {
     title: "What I Build",
-    description: "From legacy HRIS and Inventory Systems to modern web apps.",
+    description: "End-to-end business solutions—modernizing legacy HRIS and inventory systems while crafting scalable, high-performance web applications.",
     icon: faArrowTrendUp,
-    tags: ["Productivity", "UX", "Performance"],
-  },
+    tags: [],
+    featured: false,
+    ctaLabel: "Let's Connect",
+    ctaHref: "#",
+  }
 ];
 
 const experiences = [
@@ -96,19 +88,81 @@ const projects = [
   { name: "Capsgen", stack: "Visual Basic .NET, MySQL", href: "#" , image:"./src/assets/project-imgs/capsgen.png"},
 ];
 
+interface Tech {
+  name: string;
+  category: string;
+}
+
+const techs: Tech[] = [
+  // Frontend
+  { name: "HTML5", category: "Frontend" },
+  { name: "CSS", category: "Frontend" },
+  { name: "React", category: "Frontend" },
+  { name: "Vite", category: "Frontend" },
+  { name: "Bootstrap", category: "Frontend" },
+
+  // Backend
+  { name: "JavaScript", category: "Backend" },
+  { name: "TypeScript", category: "Backend" },
+  { name: "PHP", category: "Backend" },
+  { name: "CakePHP", category: "Backend" },
+  { name: "Laravel", category: "Backend" },
+  { name: "Node.js", category: "Backend" },
+
+  // Databases
+  { name: "MySQL", category: "Database" },
+  { name: "MongoDB", category: "Database" },
+
+  // Tools / Version Control
+  { name: "Git", category: "Tools" },
+  { name: "GitHub", category: "Tools" },
+  { name: "Bitbucket", category: "Tools" },
+  { name: "Jira", category: "Tools" },
+];
+
+const groupedTechs: Record<string, string[]> = techs.reduce((acc, tech) => {
+  if (!acc[tech.category]) acc[tech.category] = [];
+  acc[tech.category].push(tech.name);
+  return acc;
+}, {} as Record<string, string[]>);
+
 function BentoGrid() {
   return (
     <section id="projects" className="grid-shell">
-      {/* <div className="section-head mb-3">
-        <p className="eyebrow mb-1">Selected Work</p>
-        <h2 className="section-heading mb-0">Projects & Capabilities</h2>
-      </div> */}
       <div className="bento-grid-custom">
         {bentoItems.map((item) => (
           <div key={item.title} className={item.size === "wide" ? "grid-span-2" : undefined}>
             <BentoCard item={item} />
           </div>
         ))}
+
+        <Card className="bento-card list-card">
+          <Card.Body>
+            <div className="list-card-head">
+              <h3 className="section-title mb-0">
+                <FontAwesomeIcon icon={faCode} className="me-2" />
+                Tech Stacks
+              </h3>
+            </div>
+            <div className="list-scroll" style={{maxHeight: '250px'}}>
+              {Object.entries(groupedTechs).map(([category, names]) => (
+                <div key={category} className="mb-2 text-light">
+                  <div><strong>{category}</strong></div>
+                  <div className="ms-4 d-flex flex-wrap gap-2">
+                    {names.map((name) => (
+                      <Badge key={name} className="bento-tag bg-dark">
+                        {name}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+              ))}
+              <Button className="bento-btn" variant="dark" href="" target="_blank" rel="noreferrer">
+              Learn More
+              </Button>
+            </div>
+          </Card.Body>
+        </Card>
 
         <Card className="bento-card list-card">
           <Card.Body>
@@ -185,6 +239,18 @@ function BentoGrid() {
                 </article>
               ))}
             </div>
+          </Card.Body>
+        </Card>
+
+        <Card className="bento-card grid-span-2 projects-card">
+          <Card.Body>
+            <div className="list-card-head mb-3">
+              <h3 className="section-title mb-0">
+                <FontAwesomeIcon icon={faFolderOpen} className="me-2" />
+                Testimonials
+              </h3>
+            </div>
+            
           </Card.Body>
         </Card>
       </div>

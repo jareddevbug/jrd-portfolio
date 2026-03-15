@@ -48,11 +48,11 @@ function App() {
                 <p className="hero-subtitle">
                   Building solutions from curiosity, logic, and a little bit of caffeine.
                 </p>
-                <div className="d-flex flex-wrap gap-2 mt-3">
+                {/* <div className="d-flex flex-wrap gap-2 mt-3">
                   <Badge className="bento-tag bg-dark">Software Development</Badge>
                   <Badge className="bento-tag bg-dark">Human Resources Information Systems</Badge>
                   <Badge className="bento-tag bg-dark">Inventory Management Systems</Badge>
-                </div>
+                </div> */}
               </Card.Body>
             </Card>
             <ToolsCard isDark={theme === "dark"} onToggleTheme={toggleTheme} />
