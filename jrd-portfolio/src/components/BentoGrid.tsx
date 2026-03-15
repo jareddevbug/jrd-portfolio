@@ -83,9 +83,9 @@ const education = [
 ];
 
 const projects = [
-  { name: "TrendyBrew", stack: "React, PHP, MySQL", href: "#" , image:"./src/assets/project-imgs/trendy-brew.png"},
-  { name: "Alarm Based Study Routine Guide System", stack: "Visual Basic .NET, MySQL", href: "#" , image:"./src/assets/project-imgs/alarm-study-routine.png"},
-  { name: "Capsgen", stack: "Visual Basic .NET, MySQL", href: "#" , image:"./src/assets/project-imgs/capsgen.png"},
+  { name: "TrendyBrew", stack: "React, PHP, MySQL", href: "#" , image:"./project-imgs/trendy-brew.png"},
+  { name: "Alarm Based Study Routine Guide System", stack: "Visual Basic .NET, MySQL", href: "#" , image:"./project-imgs/alarm-study-routine.png"},
+  { name: "Capsgen", stack: "Visual Basic .NET, MySQL", href: "#" , image:"./project-imgs/capsgen.png"},
 ];
 
 interface Tech {
