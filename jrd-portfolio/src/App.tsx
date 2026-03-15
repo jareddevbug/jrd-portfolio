@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Col, Container, Row, Card, Badge } from "react-bootstrap";
+import { Col, Container, Row, Card} from "react-bootstrap";
 import "./App.css";
 import HeaderBar from "./components/HeaderBar";
 import BentoGrid from "./components/BentoGrid";

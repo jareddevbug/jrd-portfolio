@@ -3,11 +3,10 @@ import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDownload,
-  faEnvelope,
+  // faEnvelope,
   faMoon,
   faSun,
 } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import Stack from "react-bootstrap/Stack";
 
 type ToolsCardProps = {
