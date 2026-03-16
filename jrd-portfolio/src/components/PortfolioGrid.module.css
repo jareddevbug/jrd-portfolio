@@ -1,0 +1,179 @@
+.grid {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.highlight {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.cardTitle {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--text);
+}
+
+.cardBody {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.stackCard,
+.timelineCard,
+.projectsCard {
+  grid-column: span 2;
+}
+
+.cardHead {
+  margin-bottom: 0.9rem;
+}
+
+.sectionTitle {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--text);
+}
+
+.stackGrid {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.stackGroup {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.stackLabel {
+  margin: 0;
+  font-weight: 600;
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.tagRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.timeline {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.timelineItem {
+  border: 1px solid var(--border);
+  border-radius: 0.9rem;
+  padding: 0.9rem;
+  background: color-mix(in srgb, var(--surface-raised), var(--surface) 70%);
+}
+
+.timelineTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+  align-items: baseline;
+}
+
+.timelineTop h4 {
+  margin: 0;
+  font-size: 0.98rem;
+  color: var(--text);
+}
+
+.timelineTop span {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.timelineOrg {
+  margin: 0.35rem 0 0.25rem;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.timelineDetail {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.projectsGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.projectItem {
+  border: 1px solid var(--border);
+  border-radius: 0.9rem;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--surface-raised), var(--surface) 75%);
+  display: grid;
+}
+
+.projectItem img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.projectBody {
+  padding: 0.9rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.projectBody h4 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.projectBody p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stackCard,
+  .timelineCard,
+  .projectsCard {
+    grid-column: auto;
+  }
+
+  .projectsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+}

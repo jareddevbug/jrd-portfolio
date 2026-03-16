@@ -1,0 +1,14 @@
+.toggle {
+  padding: 0.55rem 1rem;
+}
+
+.label {
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .label {
+    display: none;
+  }
+}

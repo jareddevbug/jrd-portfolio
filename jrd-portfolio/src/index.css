@@ -1,44 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  color-scheme: dark;
+  --font-body: "Manrope", "Segoe UI", sans-serif;
+  --font-display: "Fraunces", "Times New Roman", serif;
+
+  --bg: #0f1115;
+  --bg-soft: #141821;
+  --surface: #181d27;
+  --surface-raised: #1f2633;
+  --text: #eef2f8;
+  --muted: #a3adbf;
+  --border: rgba(255, 255, 255, 0.09);
+  --accent: #62d0bd;
+  --accent-strong: #2f9b86;
+  --shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f4f3ee;
+  --bg-soft: #eceae3;
+  --surface: #ffffff;
+  --surface-raised: #f6f4ef;
+  --text: #101828;
+  --muted: #4f5b6b;
+  --border: rgba(16, 24, 40, 0.12);
+  --accent: #1f7a6b;
+  --accent-strong: #0d5c50;
+  --shadow: 0 18px 40px rgba(16, 24, 40, 0.12);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
 #root {
-  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  height:100%;
-  /* background: radial-gradient(ellipse at bottom,#1B2735 0%,#090A0F 100%); */
-  background: transparent;
-  overflow:hidden;
+  min-height: 100%;
+  margin: 0;
 }
 
-#stars{
-  width:2px;
-  height:2px;
-  background:transparent;
-  box-shadow:
-    100px 200px white,
-    300px 400px white,
-    500px 100px white,
-    700px 300px white,
-    900px 600px white,
-    1200px 500px white,
-    1500px 200px white,
-    1700px 700px white,
-    1900px 100px white,
-    400px 800px white,
-    800px 900px white,
-    1300px 700px white;
-    
-  animation: moveStars 20s linear infinite;
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(circle at 15% 10%, color-mix(in srgb, var(--accent), transparent 86%), transparent 45%),
+    radial-gradient(circle at 80% 0%, color-mix(in srgb, var(--accent-strong), transparent 88%), transparent 48%),
+    linear-gradient(180deg, var(--bg-soft), var(--bg));
+  transition: background-color 240ms ease, color 240ms ease;
+  letter-spacing: 0.01em;
 }
 
-@keyframes moveStars{
-  from{
-    transform:translateY(0px);
-  }
-  to{
-    transform:translateY(-2000px);
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition-duration: 0ms !important;
   }
 }

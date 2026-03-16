@@ -1,0 +1,46 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease, transform 200ms ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  border-color: color-mix(in srgb, var(--accent), var(--border) 45%);
+  background-color: color-mix(in srgb, var(--accent), transparent 86%);
+  outline: none;
+}
+
+.primary {
+  background: color-mix(in srgb, var(--accent), transparent 75%);
+  border-color: color-mix(in srgb, var(--accent), var(--border) 20%);
+  color: var(--text);
+}
+
+.primary:hover,
+.primary:focus-visible {
+  background: color-mix(in srgb, var(--accent), transparent 65%);
+}
+
+.ghost {
+  background: transparent;
+}
+
+.md {
+  padding: 0.7rem 1.2rem;
+  font-size: 0.92rem;
+}
+
+.sm {
+  padding: 0.5rem 0.9rem;
+  font-size: 0.84rem;
+}

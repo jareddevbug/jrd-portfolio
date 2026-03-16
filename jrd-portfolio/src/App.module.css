@@ -1,0 +1,36 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3rem;
+  display: grid;
+  grid-template-columns: 340px minmax(0, 1fr);
+  gap: 1.75rem;
+}
+
+.sidebar {
+  display: grid;
+  gap: 1rem;
+  align-self: start;
+}
+
+.content {
+  min-width: 0;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .main {
+    padding: 2rem 1.1rem 2.5rem;
+  }
+}
