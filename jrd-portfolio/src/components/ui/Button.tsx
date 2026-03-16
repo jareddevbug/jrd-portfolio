@@ -19,7 +19,8 @@ function Button({ variant = "ghost", size = "md", className, ...props }: ButtonP
     return <a className={classes} {...props} />;
   }
 
-  return <button className={classes} type="button" {...props} />;
+  const { type, ...restProps } = props as ButtonHTMLAttributes<HTMLButtonElement>;
+  return <button className={classes} type={type ?? "button"} {...restProps} />;
 }
 
 export default Button;
