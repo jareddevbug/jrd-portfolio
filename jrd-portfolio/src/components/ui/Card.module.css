@@ -1,7 +1,7 @@
 .card {
   background: linear-gradient(180deg, var(--surface), var(--surface-raised));
   border: 1px solid var(--border);
-  border-radius: 1.1rem;
+  border-radius: 0.3rem;
   padding: 1.4rem;
   box-shadow: var(--shadow);
   transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease;

@@ -8,7 +8,7 @@ function HeroCard() {
   return (
     <Card className={styles.card}>
       <div className={styles.avatarWrap}>
-        <img src="/jrd-vector-beard.png" alt="Jared San Fernando" className={styles.avatar} />
+        <img src="/jrd-img-white.jpg" alt="Jared San Fernando" className={styles.avatar} />
       </div>
       <h1 className={styles.title}>Jared San Fernando</h1>
       <div className={styles.meta}>
