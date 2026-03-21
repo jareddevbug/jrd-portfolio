@@ -83,6 +83,26 @@ svg {
 	height: 17.5px;
 	fill: rgb(29, 161, 242);
 }
+
+.hidden-scroll::-webkit-scrollbar {
+  width: 6px; /* thinner scrollbar for Chrome, Safari, Edge */
+}
+
+.hidden-scroll::-webkit-scrollbar-track {
+  background: transparent; /* optional: keep track subtle */
+}
+
+.hidden-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3); /* subtle thumb */
+  border-radius: 3px; /* rounded corners */
+}
+
+/* Firefox */
+.hidden-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0,0,0,0.3) transparent;
+}
+
 .verified {
 		display: block;
 		flex-shrink: 0;

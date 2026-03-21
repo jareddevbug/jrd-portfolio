@@ -101,11 +101,20 @@ function PortfolioGrid() {
             <article key={project.name} className={styles.projectItem}>
               <img src={project.image} alt={project.name} />
               <div className={styles.projectBody}>
-                <h4>{project.name}</h4>
-                <p>{project.stack}</p>
-                <Button size="sm" href={project.href}>
-                  View Project
-                </Button>
+                <h4>{project.name} <hr /> </h4>
+                <p>
+                  <strong>Tech Stacks: </strong>
+                  {project.techStack.join(", ")}
+                </p>
+                  <p>
+                   <strong>Description:</strong> {project.description}
+                  </p>
+                <p>
+                  <strong>Status:</strong> {project.status}
+                </p>
+                  <Button size="sm" href={project.href}>
+                    View Project
+                  </Button>
               </div>
             </article>
           ))}

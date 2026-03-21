@@ -79,12 +79,18 @@
   gap: 0.9rem;
 }
 
-.timelineItem {
+.timelineItem{
   border: 1px solid var(--border);
   border-radius: 0.9rem;
   padding: 0.9rem;
   background: color-mix(in srgb, var(--surface-raised), var(--surface) 70%);
+
+   &:hover {
+    border-color: color-mix(in srgb, var(--accent), var(--border) 55%);
+    cursor: pointer;
+  }
 }
+
 
 .timelineTop {
   display: flex;
@@ -118,7 +124,7 @@
   font-size: 0.88rem;
 }
 
-.projectsGrid {
+/* .projectsGrid {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -141,9 +147,66 @@
 .projectBody {
   padding: 0.9rem;
   display: grid;
-  gap: 0.4rem;
+  gap: 0.3rem;
 }
 
+.projectBody h4 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.projectBody p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+} */
+
+
+
+/* Container */
+.projectsGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start; /* ensures all cards top-align */
+}
+
+/* Each card */
+.projectItem {
+  border: 1px solid var(--border);
+  border-radius: 0.9rem;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--surface-raised), var(--surface) 75%);
+  
+  display: flex;          /* change to flex */
+  flex-direction: column; /* stack vertically */
+  height: 100%;           /* allows cards to stretch equally in grid row */
+
+  &:hover{
+    border-color: color-mix(in srgb, var(--accent), var(--border) 55%);
+    cursor: pointer;
+  }
+}
+
+/* Image */
+.projectItem img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Card body */
+.projectBody {
+  padding: 0.9rem;
+  display: flex;          /* flex layout instead of grid */
+  flex-direction: column; /* stack items top-to-bottom */
+  gap: 0.3rem;
+  flex-grow: 1;           /* makes all bodies stretch equally */
+}
+
+
+/* Text styling */
 .projectBody h4 {
   margin: 0;
   font-size: 0.95rem;

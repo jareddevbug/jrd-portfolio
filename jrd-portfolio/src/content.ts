@@ -55,23 +55,82 @@ export const education = [
 
 export const projects = [
   {
-    name: "TrendyBrew",
-    stack: "React, PHP, MySQL",
+    id: "trendybrew",
+    name: "TRENDYBREW",
+    description:
+      "Built a full-stack POS with RFID loyalty, QR-based reservations, and receipt printing, improving transaction accuracy, queue flow, and customer experience for 100+ users.",
+    techStack: ["React", "MongoDB", "Bootstrap", "Glide"],
+    category: ["Web", "Mobile", "Desktop"],
     href: "#",
     image: "/project-imgs/trendy-brew.png",
+    status: "Completed",
+    highlights: [
+      "Mobile integration via Glide",
+      "Optimized order processing flow",
+      "Designed for high-volume transactions"
+    ]
   },
   {
-    name: "Alarm Based Study Routine Guide System",
-    stack: "Visual Basic .NET, MySQL",
+    id: "study-routine-system",
+    name: "ALARM-BASED STUDY ROUTINE GUIDE SYSTEM",
+    description:
+      "Desktop-based productivity system that guides users through structured study routines using time-based triggers.",
+    techStack: ["VB.NET", "MySQL"],
+    category: ["Desktop"],
     href: "#",
     image: "/project-imgs/alarm-study-routine.png",
+    status: "Completed",
+    highlights: [
+      "Time-triggered study scheduling",
+      "Improved user discipline through automation"
+    ]
   },
   {
-    name: "Capsgen",
-    stack: "Visual Basic .NET, MySQL",
+    id: "capsgen",
+    name: "CAPSGEN",
+    description:
+      "A simple yet effective web application that assists users in generating capstone project titles through customizable field-based filtering.",
+    techStack: ["VB.NET", "MySQL"],
+    category: ["Desktop"],
     href: "#",
     image: "/project-imgs/capsgen.png",
+    status: "Completed",
+    highlights: [
+      "Streamlined data generation",
+      "Improved internal process efficiency"
+    ]
   },
+  {
+    id: "weather-app",
+    name: "WEATHER APP",
+    description:
+      "A responsive weather dashboard that fetches real-time data from external APIs and presents it in a clean UI.",
+    techStack: ["React", "OpenWeather API", "Bootstrap"],
+    category: ["Web"],
+    href: "#",
+    image: "/project-imgs/capsgen.png",
+    status: "Completed",
+    highlights: [
+      "Real-time API integration",
+      "Responsive UI design"
+    ]
+  },
+  {
+    id: "lumio",
+    name: "LUMIO",
+    description:
+      "A location-based anonymous social platform where users interact as map points, enabling raw, identity-free communication.",
+    techStack: ["MongoDB", "Express", "React", "Node.js"],
+    category: ["Web"],
+    href: "#",
+    image: "/project-imgs/lumio.png",
+    status: "Planning",
+    highlights: [
+      "Geo-based interaction model",
+      "Anonymous communication design",
+      "Experimental social UX concept"
+    ]
+  }
 ];
 
 export const techStack = {
