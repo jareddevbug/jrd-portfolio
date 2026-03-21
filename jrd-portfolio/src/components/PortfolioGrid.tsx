@@ -3,6 +3,7 @@ import {
   faBriefcase,
   faGraduationCap,
   faLayerGroup,
+  faCodeMerge
 } from "@fortawesome/free-solid-svg-icons";
 import Card from "./ui/Card";
 import Button from "./ui/Button";
@@ -29,6 +30,7 @@ function PortfolioGrid() {
           <h3 className={styles.sectionTitle}>
             <FontAwesomeIcon icon={faLayerGroup} /> Tech Stack
           </h3>
+          <hr/>
         </div>
         <div className={styles.stackGrid}>
           {Object.entries(techStack).map(([category, items]) => (
@@ -49,12 +51,14 @@ function PortfolioGrid() {
           <h3 className={styles.sectionTitle}>
             <FontAwesomeIcon icon={faBriefcase} /> Experience
           </h3>
+          <hr/>
         </div>
         <div className={styles.timeline}>
           {experiences.map((item) => (
             <article key={`${item.role}-${item.period}`} className={styles.timelineItem}>
               <div className={styles.timelineTop}>
-                <h4>{item.role}</h4>
+                <h4>{item.role}
+                </h4> 
                 <span>{item.period}</span>
               </div>
               <p className={styles.timelineOrg}>{item.org}</p>
@@ -69,6 +73,7 @@ function PortfolioGrid() {
           <h3 className={styles.sectionTitle}>
             <FontAwesomeIcon icon={faGraduationCap} /> Education
           </h3>
+          <hr/>
         </div>
         <div className={styles.timeline}>
           {education.map((item) => (
@@ -86,9 +91,10 @@ function PortfolioGrid() {
       <Card className={styles.projectsCard}>
         <div className={styles.cardHead}>
           <h3 className={styles.sectionTitle}>
-            {/* <FontAwesomeIcon icon={faSparkles} />  */}
-            Selected Projects
+            <FontAwesomeIcon icon={faCodeMerge} /> 
+            Personal Projects
           </h3>
+           <hr/>
         </div>
         <div className={styles.projectsGrid}>
           {projects.map((project) => (

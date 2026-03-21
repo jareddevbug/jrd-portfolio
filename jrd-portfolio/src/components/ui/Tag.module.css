@@ -3,7 +3,7 @@
   align-items: center;
   gap: 0.25rem;
   padding: 0.35rem 0.65rem;
-  border-radius: 999px;
+  border-radius: 0.2rem;
   border: 1px solid var(--border);
   background: color-mix(in srgb, var(--accent), transparent 88%);
   color: var(--text);
@@ -11,4 +11,9 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+}
+
+.tag:hover{
+    border: 1px solid var(--accent);
+    cursor : pointer;
 }

@@ -16,22 +16,22 @@ export const highlights = [
 
 export const experiences = [
   {
-    role: "Full Stack Developer",
-    period: "2021 - Present",
-    org: "Government HRIS + Inventory Systems",
-    detail: "Built role-based workflow modules, analytics views, and scalable internal tools.",
+    role: "Software Developer",
+    period: "2024 - Present",
+    org: "Government and Hospital Human Resource Information Systems - (CONFIDENTIAL)",
+    detail: "Developed and optimized a Human Resource Information System capable of handling thousands of concurrent users across multiple divisions. Managed high-volume transactions, patient records, and workflows by designing efficient Stored Procedures and database Events, ensuring performance and scalability under heavy workloads.",
   },
   {
-    role: "Freelance Projects",
+    role: "Freelance Developer",
     period: "2022 - 2023",
-    org: "Client-Based Work",
-    detail: "Designed and developed landing pages and point-of-sale systems for web and desktop apps.",
+    org: "Random Clients (Coffee Shop, Sari-Sari Store, Connections)",
+    detail: "Designed and developed landing pages and point-of-sale systems for web and desktop applications. Notably optimized customer queuing for a coffee shop, enhancing user experience, increasing customer loyalty, and driving higher revenue.",
   },
   {
-    role: "Hello World",
+    role: "Hello World!",
     period: "2020",
-    org: "First line of code",
-    detail: "Started exploring web development and automation.",
+    org: "  Wrote my first line of code.",
+    detail: "Started exploring Web and Desktop app Development.",
   },
 ];
 
