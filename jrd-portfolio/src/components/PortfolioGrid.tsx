@@ -113,7 +113,7 @@ function PortfolioGrid() {
                   <strong>Status:</strong> {project.status}
                 </p>
                   {project.href !== "#" && (
-                    <Button size="sm" href={project.href}>
+                    <Button size="sm" href={project.href} target="_blank">
                       View Project
                     </Button>
                   )}

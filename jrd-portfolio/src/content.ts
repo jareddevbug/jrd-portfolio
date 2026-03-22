@@ -92,7 +92,7 @@ export const projects = [
       "A simple yet effective web application that assists users in generating capstone project titles through customizable field-based filtering.",
     techStack: ["VB.NET", "MySQL"],
     category: ["Desktop"],
-    href: "#",
+    href: "https://capsgen-z6u4.vercel.app/",
     image: "/project-imgs/capsgen.png",
     status: "Completed",
     highlights: [
