@@ -168,7 +168,7 @@
 .projectsGrid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: start; /* ensures all cards top-align */
 }
 
@@ -192,7 +192,7 @@
 /* Image */
 .projectItem img {
   width: 100%;
-  height: 180px;
+  height: 300px;
   object-fit: cover;
 }
 

@@ -56,7 +56,7 @@ export const education = [
 export const projects = [
   {
     id: "trendybrew",
-    name: "TRENDYBREW",
+    name: "TrendyBrew",
     description:
       "Built a full-stack POS with RFID loyalty, QR-based reservations, and receipt printing, improving transaction accuracy, queue flow, and customer experience for 100+ users.",
     techStack: ["React", "MongoDB", "Bootstrap", "Glide"],
@@ -72,13 +72,13 @@ export const projects = [
   },
   {
     id: "study-routine-system",
-    name: "ALARM-BASED STUDY ROUTINE GUIDE SYSTEM",
+    name: "Alarmo",
     description:
       "Desktop-based productivity system that guides users through structured study routines using time-based triggers.",
     techStack: ["VB.NET", "MySQL"],
     category: ["Desktop"],
     href: "#",
-    image: "/project-imgs/alarm-study-routine.png",
+    image: "/project-imgs/alarmo.png",
     status: "Completed",
     highlights: [
       "Time-triggered study scheduling",
@@ -87,7 +87,7 @@ export const projects = [
   },
   {
     id: "capsgen",
-    name: "CAPSGEN",
+    name: "Capsgen",
     description:
       "A simple yet effective web application that assists users in generating capstone project titles through customizable field-based filtering.",
     techStack: ["VB.NET", "MySQL"],
@@ -101,14 +101,14 @@ export const projects = [
     ]
   },
   {
-    id: "weather-app",
-    name: "WEATHER APP",
+    id: "skyboard",
+    name: "SkyBoard",
     description:
       "A responsive weather dashboard that fetches real-time data from external APIs and presents it in a clean UI.",
     techStack: ["React", "OpenWeather API", "Bootstrap"],
     category: ["Web"],
     href: "#",
-    image: "/project-imgs/capsgen.png",
+    image: "/project-imgs/skyboard.png",
     status: "Completed",
     highlights: [
       "Real-time API integration",
@@ -117,13 +117,29 @@ export const projects = [
   },
   {
     id: "lumio",
-    name: "LUMIO",
+    name: "Lumio",
     description:
       "A location-based anonymous social platform where users interact as map points, enabling raw, identity-free communication.",
     techStack: ["MongoDB", "Express", "React", "Node.js"],
     category: ["Web"],
     href: "#",
     image: "/project-imgs/lumio.png",
+    status: "Planning",
+    highlights: [
+      "Geo-based interaction model",
+      "Anonymous communication design",
+      "Experimental social UX concept"
+    ]
+  },
+  {
+    id: "chordstack",
+    name: "ChordStack",
+    description:
+      "A location-based anonymous social platform where users interact as map points, enabling raw, identity-free communication.",
+    techStack: ["MongoDB", "Express", "React", "Node.js"],
+    category: ["Web"],
+    href: "#",
+    image: "/project-imgs/chordstack.png",
     status: "Planning",
     highlights: [
       "Geo-based interaction model",
